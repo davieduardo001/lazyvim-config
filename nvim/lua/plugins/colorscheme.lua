@@ -1,15 +1,14 @@
 return {
-  -- Add your minimal VSCode-style theme here
+  -- Minimal theme (min-theme)
   {
-    "Mofiqul/vscode.nvim",
+    "mvllow/min.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("vscode").setup({
+      require("min").setup({
         transparent = false,
-        italic_comments = true,
       })
-      require("vscode").load()
+      vim.cmd.colorscheme("min")
     end,
   },
 }
