@@ -1,14 +1,15 @@
 return {
-  -- Minimal theme (min-theme)
+  -- Nord theme
   {
-    "mvllow/min.nvim",
+    "shaunsingh/nord.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("min").setup({
-        transparent = false,
-      })
-      vim.cmd.colorscheme("min")
+      vim.g.nord_contrast = true
+      vim.g.nord_borders = true
+      vim.g.nord_disable_background = false
+      vim.g.nord_italic = true
+      require("nord").set()
     end,
   },
 }
