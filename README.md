@@ -13,7 +13,7 @@ This project provides a modular installation script for [LazyVim](https://lazyvi
 Simply clone this repository and run the install script:
 
 ```bash
-git clone https://github.com/davieduardo001/fedora-lazyvim-config.git
+git clone git@github.com:davieduardo001/lazyvim-config.git
 cd fedora-lazyvim-config
 chmod +x install.sh
 ./install.sh
