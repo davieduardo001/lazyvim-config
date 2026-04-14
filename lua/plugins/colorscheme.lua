@@ -1,10 +1,15 @@
 return {
-  { "datsfilipe/min-theme.nvim" },
+  {
+    "folke/tokyonight.nvim",
+    opts = {
+      style = "night",
+    },
+  },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "min-theme",
+      colorscheme = "tokyonight",
     },
   },
 }
